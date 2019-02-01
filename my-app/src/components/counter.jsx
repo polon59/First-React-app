@@ -28,6 +28,7 @@ class Counter extends Component{
 
         return(
         <div>
+            <h4>Counter #{this.props.id}</h4>
             <span className={classes}>{this.formatCount()}</span>
             <button onClick={this.handleIncrement.bind(this)}>baton</button>
         </div>
