@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class Counter extends Component{
     state = {
-        count: 0,
+        count: this.props.initValue,
     };
 
     handleIncrement(){
@@ -24,7 +24,6 @@ class Counter extends Component{
 
 
     render(){
-        console.log(this.props.initValue);
         let classes = this.getBadgeClasses();
 
         return(
